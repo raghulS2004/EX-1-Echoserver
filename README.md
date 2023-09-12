@@ -21,6 +21,7 @@ Testing the server and client
 
 ## PROGRAM:
 ###Client:
+```
 import socket
 
 
@@ -35,8 +36,9 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 
 
 print(f"Received {data!r}")
-
+```
 ###Server:
+```
 import socket
 
 
@@ -55,7 +57,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             if not data:
                 break
             conn.sendall(data)
-
+```
 ## OUTPUT:
 ###Client:
 ![Screenshot 2023-08-29 160156](https://github.com/raghulS2004/EX-1-Echoserver/assets/122069938/fc820c0b-0e9e-4ef9-8ee2-4fe536a5b0f4)

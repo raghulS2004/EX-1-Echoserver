@@ -20,7 +20,7 @@ Implementation using Python code
 Testing the server and client 
 
 ## PROGRAM:
-###Client:
+### Client:
 ```
 import socket
 
@@ -37,7 +37,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 
 print(f"Received {data!r}")
 ```
-###Server:
+### Server:
 ```
 import socket
 
@@ -59,10 +59,10 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             conn.sendall(data)
 ```
 ## OUTPUT:
-###Client:
+### Client:
 ![Screenshot 2023-08-29 160156](https://github.com/raghulS2004/EX-1-Echoserver/assets/122069938/fc820c0b-0e9e-4ef9-8ee2-4fe536a5b0f4)
 
-###Server:
+### Server:
 ![Screenshot 2023-08-29 160142](https://github.com/raghulS2004/EX-1-Echoserver/assets/122069938/0788cb2e-5c46-4097-a42c-31cd8cc9b7cd)
 
 ## RESULT:
